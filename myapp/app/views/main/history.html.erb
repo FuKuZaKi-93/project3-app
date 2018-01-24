@@ -1,0 +1,28 @@
+<h1>History</h1>
+<p>this is history page.</p>
+<table>
+<tr>本日の成果</tr>
+<tr>
+  <td>出発地点</td>
+  <td><%= @start %></td>
+  <td></td>
+</tr>
+<tr>
+  <td>経由地点</td>
+  <td><%= @via %></td>
+  <td></td>
+</tr>
+<tr>
+  <td>距離</td>
+  <td><%= @distance %>km</td>
+  <td></td>
+</tr>
+<tr>
+  <td>消費カロリー</td>
+  <td><%= @energy %>kcal</td>
+  <td></td>
+</tr>
+</table>
+
+<%= link_to 'top', {:controller => "main", :action => "index"} %>
+<%= link_to 'create', {:controller => "main", :action => "create"} %>

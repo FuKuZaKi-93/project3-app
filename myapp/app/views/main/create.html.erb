@@ -1,0 +1,36 @@
+<h1>Create</h1>
+<p>this is create page.</p>
+<%= form_tag("/main/history", method: "get") do %>
+<table>
+<tr>
+  <td><%= label_tag :start, "出発地点" %></td>
+  <td><%= text_field_tag :start %></td>
+  <td></td>
+</tr>
+<tr>
+  <td><%= label_tag :via, "経由地点" %></td>
+  <td><%= text_field_tag :via %></td>
+  <td></td>
+</tr>
+<tr>
+  <td><%= label_tag :distance, "距離" %></td>
+  <td><%= text_field_tag :distance %>km</td>
+  <td></td>
+</tr>
+<tr>
+  <td><%= label_tag :heavy, "体重" %></td>
+  <td><%= text_field_tag :heavy %>kg</td>
+  <td></td>
+</tr>
+<!--<tr>
+  <td><%= label_tag :value2, "値2" %></td>
+  <td><%= text_field_tag :value2 %></td>
+  <td><%= submit_tag "作成" %></td>
+</tr>-->
+</table>
+<span>
+  <%= submit_tag "cancel", name:"cancel"%>
+  <%= submit_tag "create" %>
+</span>
+
+<% end %>
