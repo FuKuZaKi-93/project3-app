@@ -1,5 +1,4 @@
 <h1>Create</h1>
-<p>this is create page.</p>
 <%= form_tag("/main/history", method: "get") do %>
 <table>
 <tr>
@@ -28,6 +27,13 @@
   <td><%= submit_tag "作成" %></td>
 </tr>-->
 </table>
+
+
+<div style='width: 800px;'>
+  <div id="map" style='width: 800px; height: 400px;'></div>
+</div>
+
+
 <span>
   <%= submit_tag "cancel", name:"cancel"%>
   <%= submit_tag "create" %>
